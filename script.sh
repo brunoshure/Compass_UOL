@@ -2,7 +2,7 @@
 
 # Function to check if Apache service is running
 check_apache_status() {
-    apache_status=$(systemctl is-active apache2)
+    apache_status=$(systemctl is-active httpd)
 
     if [ "$apache_status" = "active" ]; then
         return 0
