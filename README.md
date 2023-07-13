@@ -147,7 +147,7 @@ crontab -e
 ```
 sudo systemctl status crond
 ```
-- Caso o serviço não esteja em exeução, inicie-o com o comando abaixo: 
+- Caso o serviço não esteja em execução, inicie-o com o comando abaixo:
 ```
 sudo systemctl start crond
 ```
