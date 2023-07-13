@@ -22,9 +22,12 @@ generate_log_file() {
 
 # Directory to store log files
 log_directory="/home/ec2-user/efs/logs"
+# online_log_directory="$log_directory/online"
+# offline_log_directory="$log_directory/offline"
 
-# Create log directory if it doesn't exist
-# mkdir -p "$log_directory"
+# Create log directories if they don't exist
+mkdir -p "$log_directory"
+# mkdir -p "$offline_log_directory"
 
 # Check Apache service status
 if check_apache_status; then
