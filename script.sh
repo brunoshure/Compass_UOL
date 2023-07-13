@@ -24,7 +24,7 @@ generate_log_file() {
 log_directory="/home/ec2-user/efs/logs"
 
 # Create log directory if it doesn't exist
-mkdir -p "$log_directory"
+# mkdir -p "$log_directory"
 
 # Check Apache service status
 if check_apache_status; then
